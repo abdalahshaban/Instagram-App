@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/kickstart.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/javascripts/kickstart.js"></script> <!-- KICKSTART -->
+  </head>
+  <body>
+    <ul class="menu">
+      <li class='current'> <a href="/">INSTAPICS</a></li>
+      <% if(isLoggedIn){%>
+        <li> <a href="/main">MAIN FEED</a></li>
+        <li> <a href="/logout">LOGOUT</a></li>
+      <%}%>
+      
+    </ul>
